@@ -14,6 +14,10 @@ Data:
 NGS128 mRNA sequence data is from a normal group, NGS130 mRNA sequence data  is from a experiment group.
 
 Algorithms and Code:
+Overview
+--------
+
+The pipeline has three steps:
 
 (1) Alignment
 Bowtie2: Use an ungapped aligner Bowtie2 map reads to the reference transcriptome
