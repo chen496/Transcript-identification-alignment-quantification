@@ -14,8 +14,8 @@ https://www.ncbi.nlm.nih.gov/CCDS/CcdsBrowse.cgi.     
 
 Data:
 NGS128 mRNA sequence data is from a normal group, NGS130 mRNA sequence data  is from an experiment group.
-
-https://github.com/chen496/RNA-seq-anaysis/blob/28d493bc2e814932049a4c8ae263901b19a1d1ea/1.mRNA-seq%20alignment-Bowtie2/phase%20display.png
+![alt text](https://github.com/chen496/RNA-seq-anaysis/blob/28d493bc2e814932049a4c8ae263901b19a1d1ea/1.mRNA-seq%20alignment-Bowtie2/phase%20display.png
+)
 
 Overview
 --------
