@@ -1,0 +1,24 @@
+#!/bin/bash
+##BSUB -J NGS128
+##BSUB -q bigmem
+##BSUB -n 10
+##BSUB -o NGS128.out
+##BSUB -e NGS128.err
+##BSUB -u cxw496@miami.edu
+##BSUB -R "rusage[mem=10000]"
+##BSUB -N
+##BSUB -B
+#
+cd /nethome/xcai/salmon_WeiLi
+
+source ~/.bashrc
+module remove python/2.7.3
+module switch gcc/4.4.7 gcc/4.9.4
+conda activate salmon
+####salmon index -t /nethome/xcai/WeiLi_RNAdata/index/CCDS_nucleotide.current.fna -i CCDS_nucleotide.current
+
+echo "Processing sample NGS128"
+salmon quant -i CCDS_nucleotide.current -l A \
+         -1 /nethome/xcai/WeiLi_RNAdata/NGS128_S21_L001_R1_001.fastq \
+         -2 /nethome/xcai/WeiLi_RNAdata/NGS128_S21_L001_R2_001.fastq \
+         -p 10 --validateMappings -o quants_NGS128/$NGS128_S21_quant
