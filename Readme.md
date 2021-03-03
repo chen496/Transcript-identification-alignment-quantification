@@ -1,4 +1,6 @@
 RNA-seq analysis:
+--------
+
 Transcript identification/alignment, quantification and differential gene expression analysis
 
 Usually, we map the sequence to NCBI genome databases, like mm10 or CRch38. 
@@ -13,7 +15,7 @@ https://www.ncbi.nlm.nih.gov/CCDS/CcdsBrowse.cgi.     
 Data:
 NGS128 mRNA sequence data is from a normal group, NGS130 mRNA sequence data  is from a experiment group.
 
-Algorithms and Code:
+
 Overview
 --------
 
@@ -33,6 +35,8 @@ Deseq2
 
 
 Results:
+----------
+
 The RSEM gives us two levels expression estimates in isoforms and genes, respectively. 
 RSEM outputs the expected read count in each transcript and estimated the effective transcript's sequence length. 
 Divide the expected read counts by the length of expected transcript's length of each gene and then multiply 1000, so that get RPK values.  
@@ -41,7 +45,9 @@ Salmon, Kallisto, and RSEM find 453, 977, and 333 genes with mapped reads.
 Different method do give different results, but three method largely agree on those genes with largest number of reads. 
 
 
-References:
+
+References
+----------
 
 Experiment:
 
