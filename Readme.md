@@ -22,6 +22,11 @@ Quantification for comparative ligandomics to identify disease-associated target
 
 Overview
 --------
+Read mapping and transcript identification strategies:
+
+![alt text](https://github.com/chen496/RNA-seq-anaysis/blob/2515339f5474c5059b8501804d8ed2ab4792458d/1.mRNA-seq%20alignment-Bowtie2/Read%20mapping%20and%20transcript%20identification%20strategies.png
+)
+
 
 The pipeline has three steps:
 
@@ -37,9 +42,6 @@ Algorithms that quantify expression from transcriptome mappings used in this pro
 (3) Differential gene expression analysis
 Deseq2
 
-Read mapping and transcript identification strategies:
-![alt text](https://github.com/chen496/RNA-seq-anaysis/blob/2515339f5474c5059b8501804d8ed2ab4792458d/1.mRNA-seq%20alignment-Bowtie2/Read%20mapping%20and%20transcript%20identification%20strategies.png
-)
 
 
 
