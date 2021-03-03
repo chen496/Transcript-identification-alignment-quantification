@@ -1,0 +1,27 @@
+#!/bin/bash
+#BSUB -J NGS130_bowtie2
+#BSUB -q bigmem
+#BSUB -n 10
+#BSUB -o NGS130_bowtie2.out
+#BSUB -e NGS130_bowtie2.err
+#BSUB -u cxw496@miami.edu
+#BSUB -R "rusage[mem=10000]"
+#BSUB -N
+#BSUB -B
+
+module load bowtie2/2.2.6
+module load samtools/1.2
+mkdir output
+echo "module load success"
+sample=(NGS130_S23)
+
+####RSEM
+####/share/apps/bowtie2/2.2.6/bowtie2 -q --phred33 --sensitive --dpad 0 --gbar 99999999 --mp 1,1 --np 1 --score-min L,0,-0.1 -I 1 -X 1000 --no-mixed --no-discordant -p 10 -k 200 -x bowtie2_index/CCDS_nucleotide_current -1 ${sample[0]}_L001_R1_001.fastq -2 ${sample[0]}_L001_R2_001.fastq | samtools view -S -b -o bowtie2_output/${sample[0]}.bam -
+
+
+###Bowtie2 default
+/share/apps/bowtie2/2.2.6/bowtie2 -p 10 -k 200 -x bowtie2_index/CCDS_nucleotide_current -1 ${sample[0]}_L001_R1_001.fastq -2 ${sample[0]}_L001_R2_001.fastq | samtools view -S -b -o bowtie2_output/${sample[0]}.bam -
+
+##samtools view -bS ./bowtie2_output/${sample[0]}.sam > ./bowtie2_output/${sample[0]}.bam
+samtools view -bF 4 ./bowtie2_output/${sample[0]}.bam > ./bowtie2_output/${sample[0]}mapped.bam
+samtools sort ./bowtie2_output/${sample[0]}mapped.bam ./bowtie2_output/${sample[0]}mappedsort
