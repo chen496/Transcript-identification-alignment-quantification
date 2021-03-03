@@ -1,0 +1,31 @@
+#!/bin/bash
+#BSUB -J RSEM_NGS130
+#BSUB -q bigmem
+#BSUB -n 10
+#BSUB -o RSEM_NGS130.out
+#BSUB -e RSEM_NGS130.err
+#BSUB -u cxw496@miami.edu
+#BSUB -R "rusage[mem=10000]"
+#BSUB -N
+#BSUB -B
+
+cd /nethome/xcai/WeiLi_RNAdata
+module load bowtie2/2.2.6
+module load samtools/1.2
+
+##RSEM-1.2.25/rsem-prepare-reference \
+##		                --transcript-to-gene-map ./index/CCDS_nucleotide.current_ref_mapping.txt \
+##			        --bowtie2 --bowtie2-path /share/apps/bowtie2/2.2.6 \
+##   				  ./index/CCDS_nucleotide.current.fna ./index/CCDS_nucleotide.current
+##mkdir output
+##mkdir output/RSEM
+RSEM-1.2.25/rsem-calculate-expression -p 10 \
+                               --bowtie2 --bowtie2-path /share/apps/bowtie2/2.2.6 \
+                               --paired-end \
+                               --estimate-rspd \
+                               NGS130_S23_L001_R1_001.fastq \
+                               NGS130_S23_L001_R2_001.fastq \
+                               ./index/CCDS_nucleotide.current \
+                               ./output/RSEM/NGS130_S23
+
+
