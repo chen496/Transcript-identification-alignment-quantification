@@ -1,0 +1,22 @@
+{
+    "read_files": "[ /nethome/xcai/WeiLi_RNAdata/NGS130_S23_L001_R1_001.fastq, /nethome/xcai/WeiLi_RNAdata/NGS130_S23_L001_R2_001.fastq]",
+    "expected_format": "IU",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 6121447,
+    "num_assigned_fragments": 6121447,
+    "num_frags_with_concordant_consistent_mappings": 3799706,
+    "num_frags_with_inconsistent_or_orphan_mappings": 2322678,
+    "strand_mapping_bias": 0.512755197375797,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 1948319,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 1851387,
+    "SF": 1703641,
+    "SR": 619037,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}
