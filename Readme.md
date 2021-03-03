@@ -13,7 +13,7 @@ Otherwise, false positives will be very high. Therefore, it is important to alig
 https://www.ncbi.nlm.nih.gov/CCDS/CcdsBrowse.cgi.     
 
 Data:
-NGS128 mRNA sequence data is from a normal group, NGS130 mRNA sequence data  is from a experiment group.
+NGS128 mRNA sequence data is from a normal group, NGS130 mRNA sequence data  is from an experiment group.
 
 
 Overview
@@ -57,7 +57,7 @@ Experiment:
 
 Algorithms:
 
-.. [3]Conesa, A., Madrigal, P., Tarazona, S., Gomez-Cabrero, D., Cervera, A., McPherson, A., Szcześniak, M.W., Gaffney, D.J., Elo, L.L., Zhang, X. and Mortazavi, A., 2016. A survey of best practices for RNA-seq data analysis. Genome biology, 17(1), pp.1-19.
+.. [3] Conesa, A., Madrigal, P., Tarazona, S., Gomez-Cabrero, D., Cervera, A., McPherson, A., Szcześniak, M.W., Gaffney, D.J., Elo, L.L., Zhang, X. and Mortazavi, A., 2016. A survey of best practices for RNA-seq data analysis. Genome biology, 17(1), pp.1-19.
 
 .. [4] Everaert, C., Luypaert, M., Maag, J.L., Cheng, Q.X., Dinger, M.E., Hellemans, J. and Mestdagh, P., 2017. Benchmarking of RNA-sequencing analysis workflows using whole-transcriptome RT-qPCR expression data. Scientific reports, 7(1), pp.1-11.
 
