@@ -1,0 +1,16 @@
+#!/bin/bash
+#BSUB -J NGS130
+#BSUB -q bigmem
+#BSUB -n 10
+#BSUB -o NGS130.out
+#BSUB -e NGS130.err
+#BSUB -u cxw496@miami.edu
+#BSUB -R "rusage[mem=10000]"
+#BSUB -N
+#BSUB -B
+
+./kallisto index -i index/NGS130 /nethome/xcai/WeiLi_RNAdata/index/CCDS_nucleotide.current.fna
+./kallisto quant -i index/NGS130 -o output_NGS130 /nethome/xcai/WeiLi_RNAdata/NGS130_S23_L001_R1_001.fastq /nethome/xcai/WeiLi_RNAdata/NGS130_S23_L001_R2_001.fastq
+
+
+

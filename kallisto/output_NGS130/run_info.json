@@ -1,0 +1,13 @@
+{
+	"n_targets": 27157,
+	"n_bootstraps": 0,
+	"n_processed": 43559176,
+	"n_pseudoaligned": 34045322,
+	"n_unique": 26400981,
+	"p_pseudoaligned": 78.2,
+	"p_unique": 60.6,
+	"kallisto_version": "0.46.1",
+	"index_version": 10,
+	"start_time": "Tue Sep 22 20:30:36 2020",
+	"call": "./kallisto quant -i index/NGS130 -o output_NGS130 /nethome/xcai/WeiLi_RNAdata/NGS130_S23_L001_R1_001.fastq /nethome/xcai/WeiLi_RNAdata/NGS130_S23_L001_R2_001.fastq"
+}

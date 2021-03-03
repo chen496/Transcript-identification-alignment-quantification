@@ -1,0 +1,13 @@
+{
+	"n_targets": 27157,
+	"n_bootstraps": 0,
+	"n_processed": 49925892,
+	"n_pseudoaligned": 34261851,
+	"n_unique": 29763349,
+	"p_pseudoaligned": 68.6,
+	"p_unique": 59.6,
+	"kallisto_version": "0.46.1",
+	"index_version": 10,
+	"start_time": "Tue Sep 22 20:25:45 2020",
+	"call": "./kallisto quant -i index/NGS128 -o output_NGS128 /nethome/xcai/WeiLi_RNAdata/NGS128_S21_L001_R1_001.fastq /nethome/xcai/WeiLi_RNAdata/NGS128_S21_L001_R2_001.fastq"
+}
