@@ -1,4 +1,4 @@
-RNA-seq analysis:
+cDNA-seq analysis:
 --------
 
 Transcript identification/alignment, quantification and differential gene expression analysis
